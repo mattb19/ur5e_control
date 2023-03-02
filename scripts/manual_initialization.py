@@ -37,6 +37,10 @@ if __name__ == '__main__':
 	pos_cmd_point.positions[1] = -math.pi/4
 	# just change the value of the command for the elbow joint
 	pos_cmd_point.positions[0] = math.pi/4
+	# change wrist 1
+	pos_cmd_point.positions[3] = -1.51
+	# change wrist 2
+	pos_cmd_point.positions[4] = -1.51
 	# add the trajectory point to the command
 	pos_cmd.points.append(pos_cmd_point)
 	# define a message header	
