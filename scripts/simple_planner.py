@@ -20,25 +20,47 @@ if __name__ == '__main__':
 	plan_point1 = Twist()
 	# just a quick solution to send two target points
 	# define a point close to the initial position
-	plan_point1.linear.x = -0.7
-	plan_point1.linear.y = -0.23
-	plan_point1.linear.z = 0.363
-	plan_point1.angular.x = 1.57
-	plan_point1.angular.y = 0.0
-	plan_point1.angular.z = 0.0
+	plan_point1.linear.x = -0.55
+	plan_point1.linear.y = -0.11
+	plan_point1.linear.z = 0.33
+	plan_point1.angular.x = -3.01
+	plan_point1.angular.y = -0.06
+	plan_point1.angular.z = 1.80
 	# add this point to the plan
 	plan.points.append(plan_point1)
 	
 	plan_point2 = Twist()
-	# define a point away from the initial position
-	plan_point2.linear.x = -0.6
-	plan_point2.linear.y = -0.23
-	plan_point2.linear.z = 0.25
-	plan_point2.angular.x = 1.57
-	plan_point2.angular.y = 0.0
-	plan_point2.angular.z = 0.0
+	# define where to robot picks up item
+	plan_point2.linear.x = -0.53
+	plan_point2.linear.y = -0.13
+	plan_point2.linear.z = 0.03
+	plan_point2.angular.x = -3.01
+	plan_point2.angular.y = -0.06
+	plan_point2.angular.z = 1.80
 	# add this point to the plan
 	plan.points.append(plan_point2)
+	
+	plan_point3 = Twist()
+	# define where robot lifts item to
+	plan_point3.linear.x = -0.73
+	plan_point3.linear.y = -0.13
+	plan_point3.linear.z = 0.32
+	plan_point3.angular.x = -3.01
+	plan_point3.angular.y = -0.06
+	plan_point3.angular.z = 1.80
+	# add this point to the plan
+	plan.points.append(plan_point3)
+
+	plan_point4 = Twist()
+	# define where robot places item
+	plan_point4.linear.x = -0.78
+	plan_point4.linear.y = -0.13
+	plan_point4.linear.z = 0.08
+	plan_point4.angular.x = -3.01
+	plan_point4.angular.y = 0.00
+	plan_point4.angular.z = 1.79
+	# add this point to the plan
+	plan.points.append(plan_point4)
 
 	
 	
